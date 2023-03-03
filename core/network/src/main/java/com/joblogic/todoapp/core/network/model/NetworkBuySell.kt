@@ -15,7 +15,7 @@ data class NetworkBuySell(
     @SerialName("name")
     val name: String?,
     @SerialName("price")
-    val price: Int?,
+    val price: Long?,
     @SerialName("quantity")
     val quantity: Int?,
     @SerialName("type")

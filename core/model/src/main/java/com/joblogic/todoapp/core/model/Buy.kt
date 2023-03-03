@@ -5,7 +5,7 @@ package com.joblogic.todoapp.core.model
  */
 
 data class Buy(
-    val id: String?,
+    val id: Int?,
     val name: String?,
     val price: Long?,
     val quantity: Int?
