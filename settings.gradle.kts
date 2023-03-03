@@ -18,3 +18,4 @@ rootProject.name = "To Do App"
 include(":app")
 include(":core:model")
 include(":core:designsystem")
+include(":core:common")
