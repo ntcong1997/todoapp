@@ -9,7 +9,7 @@ import kotlinx.serialization.SerialName
  */
 
 @Serializable
-data class NetworkBuySell(
+data class NetworkItem(
     @SerialName("id")
     val id: Int?,
     @SerialName("name")
@@ -21,15 +21,15 @@ data class NetworkBuySell(
     @SerialName("type")
     val type: Int?
 ) {
-    val buySellType: BuySellType
+    val itemType: ItemType
         get() = when (type) {
-            1 -> BuySellType.BUY
-            2 -> BuySellType.SELL
-            else -> BuySellType.UNKNOWN
+            1 -> ItemType.BUY
+            2 -> ItemType.SELL
+            else -> ItemType.UNKNOWN
         }
 }
 
-enum class BuySellType {
+enum class ItemType {
     BUY,
     SELL,
     UNKNOWN

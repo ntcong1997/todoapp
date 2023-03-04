@@ -1,7 +1,7 @@
 package com.joblogic.todoapp.core.network.retrofit
 
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
-import com.joblogic.todoapp.core.network.model.NetworkBuySell
+import com.joblogic.todoapp.core.network.model.NetworkItem
 import com.joblogic.todoapp.core.network.model.NetworkCall
 import retrofit2.http.GET
 import com.joblogic.todoapp.core.network.BuildConfig
@@ -25,7 +25,7 @@ private interface RetrofitTdaNetworkApi {
     suspend fun getCalls(): List<NetworkCall>
 
     @GET(value = "imkhan334/demo-1/buy")
-    suspend fun getBuySell(): List<NetworkBuySell>
+    suspend fun getItem(): List<NetworkItem>
 }
 
 @Singleton
@@ -46,7 +46,7 @@ class RetrofitTdaNetwork @Inject constructor(
     override suspend fun getCalls(): List<NetworkCall> =
         networkApi.getCalls()
 
-    override suspend fun getBuySell(): List<NetworkBuySell> =
-        networkApi.getBuySell()
+    override suspend fun getItem(): List<NetworkItem> =
+        networkApi.getItem()
 }
 

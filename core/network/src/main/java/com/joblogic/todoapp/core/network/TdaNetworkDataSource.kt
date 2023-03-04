@@ -1,6 +1,6 @@
 package com.joblogic.todoapp.core.network
 
-import com.joblogic.todoapp.core.network.model.NetworkBuySell
+import com.joblogic.todoapp.core.network.model.NetworkItem
 import com.joblogic.todoapp.core.network.model.NetworkCall
 
 /**
@@ -9,5 +9,5 @@ import com.joblogic.todoapp.core.network.model.NetworkCall
 interface TdaNetworkDataSource {
     suspend fun getCalls(): List<NetworkCall>
 
-    suspend fun getBuySell(): List<NetworkBuySell>
+    suspend fun getItem(): List<NetworkItem>
 }
