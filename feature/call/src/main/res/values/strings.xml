@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_call">Call</string>
+    <string name="text_name">Name</string>
+    <string name="text_number">Number</string>
+
+</resources>

@@ -18,7 +18,7 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
             extensions.configure<LibraryExtension> {
                 defaultConfig {
                     testInstrumentationRunner =
-                        "com.joblogic.todoapp.core.testing.TcMusicTestRunner"
+                        "com.joblogic.todoapp.core.testing.ToDoAppTestRunner"
                 }
                 configureGradleManagedDevices(this)
             }
@@ -27,20 +27,15 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
 
             dependencies {
                 add("implementation", project(":core:model"))
-                add("implementation", project(":core:ui"))
                 add("implementation", project(":core:designsystem"))
                 add("implementation", project(":core:common"))
                 add("implementation", project(":core:domain"))
 
                 add("testImplementation", kotlin("test"))
-                add("testImplementation", project(":core:testing"))
+//                add("testImplementation", project(":core:testing"))
                 add("testImplementation", project(":core:data"))
-                add("testImplementation", project(":core:player"))
                 add("androidTestImplementation", kotlin("test"))
-                add("androidTestImplementation", project(":core:testing"))
-
-                add("implementation", libs.findLibrary("io.coil.kt.coil").get())
-                add("implementation", libs.findLibrary("io.coil.kt.coil.compose").get())
+//                add("androidTestImplementation", project(":core:testing"))
 
                 add("implementation", libs.findLibrary("androidx.hilt.hilt.navigation.compose").get())
                 add("implementation", libs.findLibrary("androidx.lifecycle.lifecycle.runtime.compose").get())

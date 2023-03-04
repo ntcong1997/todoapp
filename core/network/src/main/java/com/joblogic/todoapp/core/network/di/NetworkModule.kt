@@ -13,6 +13,8 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import javax.inject.Singleton
 import com.joblogic.todoapp.core.network.BuildConfig
+import com.joblogic.todoapp.core.network.TdaNetworkDataSource
+import com.joblogic.todoapp.core.network.retrofit.RetrofitTdaNetwork
 
 /**
  * Created by TC on 03/03/2023.
@@ -52,4 +54,10 @@ object NetworkModule {
         }
         return builder.build()
     }
+
+    @Provides
+    fun provideTdaNetworkDataSource(
+        networkJson: Json,
+        okHttpClient: OkHttpClient
+    ): TdaNetworkDataSource = RetrofitTdaNetwork(networkJson, okHttpClient)
 }

@@ -20,7 +20,7 @@ import javax.inject.Singleton
 
 private const val TdaBaseUrl = BuildConfig.BACKEND_DOMAIN
 
-interface RetrofitTdaNetworkApi {
+private interface RetrofitTdaNetworkApi {
     @GET(value = "imkhan334/demo-1/call")
     suspend fun getCalls(): List<NetworkCall>
 
