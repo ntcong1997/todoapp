@@ -9,5 +9,5 @@ import com.joblogic.todoapp.core.network.model.NetworkCall
 interface TdaNetworkDataSource {
     suspend fun getCalls(): List<NetworkCall>
 
-    suspend fun getItem(): List<NetworkItem>
+    suspend fun getItems(): List<NetworkItem>
 }

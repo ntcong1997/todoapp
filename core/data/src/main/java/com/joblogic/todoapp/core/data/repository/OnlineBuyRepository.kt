@@ -14,7 +14,7 @@ class OnlineBuyRepository @Inject constructor(
     private val tdaNetworkDataSource: TdaNetworkDataSource
 ) : BuyRepository {
     override suspend fun getBuys(): List<Buy> =
-        tdaNetworkDataSource.getItem()
+        tdaNetworkDataSource.getItems()
             .filter { it.itemType == ItemType.BUY }
             .map { it.toBuy() }
 }

@@ -14,4 +14,6 @@ dependencies {
 
     // Hilt Test
     implementation(libs.com.google.dagger.hilt.android.testing)
+
+    testImplementation(libs.org.jetbrains.kotlinx.kotlinx.coroutines.test)
 }

@@ -46,7 +46,7 @@ class RetrofitTdaNetwork @Inject constructor(
     override suspend fun getCalls(): List<NetworkCall> =
         networkApi.getCalls()
 
-    override suspend fun getItem(): List<NetworkItem> =
+    override suspend fun getItems(): List<NetworkItem> =
         networkApi.getItem()
 }
 

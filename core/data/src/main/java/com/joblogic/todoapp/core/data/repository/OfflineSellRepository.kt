@@ -29,7 +29,7 @@ class OfflineSellRepository @Inject constructor(
     }
 
     override suspend fun syncSells() {
-        val networkSells = tdaNetworkDataSource.getItem().filter {
+        val networkSells = tdaNetworkDataSource.getItems().filter {
             it.itemType == ItemType.SELL
         }
         sellDao.deleteSellEntities()
