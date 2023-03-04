@@ -3,6 +3,7 @@ package com.joblogic.todoapp.navigation
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import com.joblogic.todoapp.feature.buy.navigation.buyScreen
 import com.joblogic.todoapp.feature.call.navigation.callRoute
 import com.joblogic.todoapp.feature.call.navigation.callScreen
 
@@ -20,5 +21,6 @@ fun ToDoAppNavHost(
         startDestination = startDestination
     ) {
         callScreen()
+        buyScreen()
     }
 }

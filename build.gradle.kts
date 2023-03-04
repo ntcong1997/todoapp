@@ -13,4 +13,6 @@ plugins {
     alias(libs.plugins.com.google.dagger.hilt.android) apply false
     alias(libs.plugins.com.google.android.libraries.mapsplatform.secrets.gradle.plugin) apply false
     alias(libs.plugins.org.jetbrains.kotlin.plugin.serialization) apply false
+    id("com.android.library") version "7.4.1" apply false
+    id("org.jetbrains.kotlin.android") version "1.8.0" apply false
 }

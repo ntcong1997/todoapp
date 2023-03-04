@@ -66,7 +66,6 @@ androidx-navigation-navigation-compose = { module = "androidx.navigation:navigat
 androidx-navigation-navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "androidx-navigation" }
 androidx-room-room-compiler = { module = "androidx.room:room-compiler", version.ref = "androidx-room" }
 androidx-room-room-ktx = { module = "androidx.room:room-ktx", version.ref = "androidx-room" }
-androidx-room-room-paging = { module = "androidx.room:room-paging", version.ref = "androidx-room" }
 androidx-room-room-runtime = { module = "androidx.room:room-runtime", version.ref = "androidx-room" }
 androidx-startup-startup-runtime = { module = "androidx.startup:startup-runtime", version.ref = "androidx-startup" }
 androidx-test-espresso-espresso-core = { module = "androidx.test.espresso:espresso-core", version.ref = "androidx-test-espresso" }

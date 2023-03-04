@@ -3,6 +3,7 @@ package com.joblogic.todoapp.core.data.repository
 import com.joblogic.todoapp.core.data.model.toBuy
 import com.joblogic.todoapp.core.model.Buy
 import com.joblogic.todoapp.core.network.TdaNetworkDataSource
+import com.joblogic.todoapp.core.network.model.BuySellType
 import javax.inject.Inject
 
 /**
@@ -14,6 +15,6 @@ class OnlineBuyRepository @Inject constructor(
 ) : BuyRepository {
     override suspend fun getBuys(): List<Buy> =
         tdaNetworkDataSource.getBuySell()
-            .filter { it.type == 1 }
+            .filter { it.buySellType == BuySellType.BUY }
             .map { it.toBuy() }
 }

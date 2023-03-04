@@ -20,4 +20,17 @@ data class NetworkBuySell(
     val quantity: Int?,
     @SerialName("type")
     val type: Int?
-)
+) {
+    val buySellType: BuySellType
+        get() = when (type) {
+            1 -> BuySellType.BUY
+            2 -> BuySellType.SELL
+            else -> BuySellType.UNKNOWN
+        }
+}
+
+enum class BuySellType {
+    BUY,
+    SELL,
+    UNKNOWN
+}

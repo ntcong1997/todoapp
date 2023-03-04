@@ -40,5 +40,9 @@ gradlePlugin {
             id = "todoapp.android.hilt"
             implementationClass = "AndroidHiltConventionPlugin"
         }
+        register("androidRoom") {
+            id = "todoapp.android.room"
+            implementationClass = "AndroidRoomConventionPlugin"
+        }
     }
 }

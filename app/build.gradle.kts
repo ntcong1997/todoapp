@@ -45,6 +45,7 @@ android {
 
 dependencies {
     implementation(project(":feature:call"))
+    implementation(project(":feature:buy"))
 
     implementation(project(":core:common"))
     implementation(project(":core:designsystem"))
