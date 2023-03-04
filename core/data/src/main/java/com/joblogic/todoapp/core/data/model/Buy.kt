@@ -1,6 +1,6 @@
 package com.joblogic.todoapp.core.data.model
 
-import com.joblogic.todoapp.core.model.Buy
+import com.joblogic.todoapp.core.model.BuyItem
 import com.joblogic.todoapp.core.network.model.NetworkItem
 
 /**
@@ -8,7 +8,7 @@ import com.joblogic.todoapp.core.network.model.NetworkItem
  */
 
 fun NetworkItem.toBuy() =
-    Buy(
+    BuyItem(
         id = id,
         name = name,
         price = price,

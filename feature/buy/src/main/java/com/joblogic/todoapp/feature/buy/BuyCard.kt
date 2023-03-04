@@ -12,7 +12,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.joblogic.todoapp.core.model.Buy
+import com.joblogic.todoapp.core.model.BuyItem
 
 /**
  * Created by TC on 04/03/2023.
@@ -21,7 +21,7 @@ import com.joblogic.todoapp.core.model.Buy
 @OptIn(ExperimentalMaterialApi::class)
 @Composable
 fun BuyCard(
-    buy: Buy
+    buy: BuyItem
 ) {
     Card(
         onClick = {},
@@ -108,7 +108,7 @@ fun BuyQuantityPreview() {
 @Preview
 @Composable
 fun BuyCardPreview() {
-    BuyCard(buy = Buy(
+    BuyCard(buy = BuyItem(
         id = null,
         name = "Eden Hazard",
         price = 2000,

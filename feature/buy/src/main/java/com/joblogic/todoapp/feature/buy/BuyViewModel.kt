@@ -3,7 +3,7 @@ package com.joblogic.todoapp.feature.buy
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.joblogic.todoapp.core.domain.usecase.GetBuysUseCase
-import com.joblogic.todoapp.core.model.Buy
+import com.joblogic.todoapp.core.model.BuyItem
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
@@ -49,7 +49,7 @@ class BuyViewModel @Inject constructor(
 }
 
 sealed interface BuysUiState {
-    data class Success(val buys: List<Buy>) : BuysUiState
+    data class Success(val buys: List<BuyItem>) : BuysUiState
     object Error : BuysUiState
     object Loading : BuysUiState
 }
