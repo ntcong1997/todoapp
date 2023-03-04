@@ -11,7 +11,3 @@ android {
     }
     namespace = "com.joblogic.todoapp.core.database"
 }
-
-dependencies {
-    implementation(project(":core:model"))
-}

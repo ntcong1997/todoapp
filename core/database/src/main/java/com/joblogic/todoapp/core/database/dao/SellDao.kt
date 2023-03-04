@@ -20,5 +20,8 @@ interface SellDao {
      * Inserts [sellEntities] into the db if they don't exist, and replace those that do
      */
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertOrReplaceTopics(sellEntities: List<SellEntity>)
+    suspend fun insertOrReplaceSellEntities(sellEntities: List<SellEntity>)
+
+    @Query(value = "DELETE FROM ItemToSell")
+    suspend fun deleteSellEntities()
 }

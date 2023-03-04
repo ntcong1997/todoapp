@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="text_sell">Sell</string>
+    <string name="text_name">Name</string>
+    <string name="text_price">Price</string>
+    <string name="text_quantity">Quantity</string>
+
+</resources>

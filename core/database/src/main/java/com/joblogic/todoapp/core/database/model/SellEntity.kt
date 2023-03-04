@@ -14,7 +14,7 @@ import androidx.room.PrimaryKey
     indices = [Index(value = ["sell_id"], unique = true)]
 )
 data class SellEntity(
-    @ColumnInfo(name = "sell_id") val sellId: String?,
+    @ColumnInfo(name = "sell_id") val sellId: Int?,
     @ColumnInfo(name = "name") val name: String?,
     @ColumnInfo(name = "price") val price: Long?,
     @ColumnInfo(name = "quantity") val quantity: Int?,

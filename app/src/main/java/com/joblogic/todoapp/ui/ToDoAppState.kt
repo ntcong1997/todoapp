@@ -12,6 +12,7 @@ import androidx.navigation.navOptions
 import androidx.tracing.trace
 import com.joblogic.todoapp.feature.buy.navigation.navigateToBuy
 import com.joblogic.todoapp.feature.call.navigation.navigateToCall
+import com.joblogic.todoapp.feature.sell.navigation.navigateToSell
 import com.joblogic.todoapp.navigation.TopLevelDestination
 import kotlinx.coroutines.CoroutineScope
 
@@ -62,6 +63,7 @@ class ToDoAppState(
         when (topLevelDestination) {
             TopLevelDestination.CALL -> navController.navigateToCall(topLevelNavOptions)
             TopLevelDestination.BUY -> navController.navigateToBuy(topLevelNavOptions)
+            TopLevelDestination.SELL -> navController.navigateToSell(topLevelNavOptions)
         }
     }
 }

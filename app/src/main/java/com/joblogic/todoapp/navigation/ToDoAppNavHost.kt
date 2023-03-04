@@ -6,6 +6,7 @@ import androidx.navigation.compose.NavHost
 import com.joblogic.todoapp.feature.buy.navigation.buyScreen
 import com.joblogic.todoapp.feature.call.navigation.callRoute
 import com.joblogic.todoapp.feature.call.navigation.callScreen
+import com.joblogic.todoapp.feature.sell.navigation.sellScreen
 
 /**
  * Created by TC on 04/03/2023.
@@ -22,5 +23,6 @@ fun ToDoAppNavHost(
     ) {
         callScreen()
         buyScreen()
+        sellScreen()
     }
 }

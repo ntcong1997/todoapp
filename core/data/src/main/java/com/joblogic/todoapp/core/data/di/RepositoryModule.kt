@@ -1,9 +1,6 @@
 package com.joblogic.todoapp.core.data.di
 
-import com.joblogic.todoapp.core.data.repository.BuyRepository
-import com.joblogic.todoapp.core.data.repository.CallRepository
-import com.joblogic.todoapp.core.data.repository.OnlineBuyRepository
-import com.joblogic.todoapp.core.data.repository.OnlineCallRepository
+import com.joblogic.todoapp.core.data.repository.*
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -25,4 +22,9 @@ interface RepositoryModule {
     fun bindsBuyRepository(
         onlineBuyRepository: OnlineBuyRepository
     ) : BuyRepository
+
+    @Binds
+    fun bindsSellRepository(
+        offlineSellRepository: OfflineSellRepository
+    ) : SellRepository
 }

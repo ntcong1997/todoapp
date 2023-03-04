@@ -46,9 +46,12 @@ android {
 dependencies {
     implementation(project(":feature:call"))
     implementation(project(":feature:buy"))
+    implementation(project(":feature:sell"))
 
     implementation(project(":core:common"))
     implementation(project(":core:designsystem"))
+
+    implementation(project(":sync:work"))
 
     // Dagger Hilt
     implementation(libs.androidx.hilt.hilt.navigation.compose)

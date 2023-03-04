@@ -10,6 +10,7 @@ android {
 dependencies {
     implementation(project(":core:model"))
     implementation(project(":core:network"))
+    implementation(project(":core:database"))
 
     // Hilt Test
     implementation(libs.com.google.dagger.hilt.android.testing)

@@ -38,6 +38,9 @@
             <option value="$PROJECT_DIR$/feature" />
             <option value="$PROJECT_DIR$/feature/buy" />
             <option value="$PROJECT_DIR$/feature/call" />
+            <option value="$PROJECT_DIR$/feature/sell" />
+            <option value="$PROJECT_DIR$/sync" />
+            <option value="$PROJECT_DIR$/sync/work" />
           </set>
         </option>
       </GradleProjectSettings>
