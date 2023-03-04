@@ -4,7 +4,7 @@ import com.joblogic.todoapp.core.common.network.Dispatcher
 import com.joblogic.todoapp.core.common.network.ToDoAppDispatchers
 import com.joblogic.todoapp.core.data.repository.BuyRepository
 import com.joblogic.todoapp.core.domain.CoroutineUseCase
-import com.joblogic.todoapp.core.model.BuyItem
+import com.joblogic.todoapp.core.model.Buy
 import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Inject
 
@@ -15,8 +15,8 @@ import javax.inject.Inject
 class GetBuysUseCase @Inject constructor(
     private val buyRepository: BuyRepository,
     @Dispatcher(ToDoAppDispatchers.IO) dispatcher: CoroutineDispatcher
-) : CoroutineUseCase<Unit, List<BuyItem>>(dispatcher) {
-    override suspend fun execute(parameters: Unit): List<BuyItem> {
+) : CoroutineUseCase<Unit, List<Buy>>(dispatcher) {
+    override suspend fun execute(parameters: Unit): List<Buy> {
         return buyRepository.getBuys()
     }
 }
