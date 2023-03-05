@@ -53,8 +53,11 @@ dependencies {
 
     implementation(project(":sync:work"))
 
+    androidTestImplementation(project(":core:testing"))
+
     // Dagger Hilt
     implementation(libs.androidx.hilt.hilt.navigation.compose)
+    androidTestImplementation(libs.com.google.dagger.hilt.android.testing)
 
     // Lifecycle
     implementation(libs.androidx.lifecycle.lifecycle.runtime.compose)
@@ -62,10 +65,14 @@ dependencies {
 
     // Navigation
     implementation(libs.androidx.navigation.navigation.compose)
+    androidTestImplementation(libs.androidx.navigation.navigation.testing)
 
     // Splash screen
     implementation(libs.androidx.core.core.splashscreen)
 
     // Utils
     implementation(libs.androidx.tracing.tracing.ktx)
+
+    androidTestImplementation(libs.androidx.compose.ui.ui.test.junit4)
+    debugImplementation(libs.androidx.compose.ui.ui.test.manifest)
 }

@@ -68,6 +68,7 @@ androidx-lifecycle-lifecycle-runtime-compose = { module = "androidx.lifecycle:li
 androidx-lifecycle-lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "androidx-lifecycle" }
 androidx-navigation-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "androidx-navigation" }
 androidx-navigation-navigation-safe-args-gradle-plugin = { module = "androidx.navigation:navigation-safe-args-gradle-plugin", version.ref = "androidx-navigation" }
+androidx-navigation-navigation-testing = { group = "androidx.navigation", name = "navigation-testing", version.ref = "androidx-navigation" }
 androidx-room-room-compiler = { module = "androidx.room:room-compiler", version.ref = "androidx-room" }
 androidx-room-room-ktx = { module = "androidx.room:room-ktx", version.ref = "androidx-room" }
 androidx-room-room-runtime = { module = "androidx.room:room-runtime", version.ref = "androidx-room" }
