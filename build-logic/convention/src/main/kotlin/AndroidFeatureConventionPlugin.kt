@@ -32,11 +32,12 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
                 add("implementation", project(":core:domain"))
 
                 add("testImplementation", kotlin("test"))
-//                add("testImplementation", project(":core:testing"))
+                add("testImplementation", project(":core:testing"))
                 add("testImplementation", project(":core:data"))
                 add("androidTestImplementation", kotlin("test"))
-//                add("androidTestImplementation", project(":core:testing"))
+                add("androidTestImplementation", project(":core:testing"))
 
+                add("implementation", libs.findLibrary("androidx.test.core").get())
                 add("implementation", libs.findLibrary("androidx.hilt.hilt.navigation.compose").get())
                 add("implementation", libs.findLibrary("androidx.lifecycle.lifecycle.runtime.compose").get())
                 add("implementation", libs.findLibrary("androidx.lifecycle.lifecycle.viewmodel.compose").get())

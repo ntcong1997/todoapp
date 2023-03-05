@@ -11,3 +11,13 @@ android {
     }
     namespace = "com.joblogic.todoapp.core.database"
 }
+
+dependencies {
+    androidTestImplementation(project(":core:testing"))
+
+    androidTestImplementation(libs.androidx.test.core)
+
+    // Coroutines
+    implementation(libs.org.jetbrains.kotlinx.kotlinx.coroutines.android)
+    androidTestImplementation(libs.org.jetbrains.kotlinx.kotlinx.coroutines.test)
+}

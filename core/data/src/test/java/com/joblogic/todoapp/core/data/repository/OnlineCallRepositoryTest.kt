@@ -2,7 +2,6 @@ package com.joblogic.todoapp.core.data.repository
 
 import com.joblogic.todoapp.core.data.model.toCall
 import com.joblogic.todoapp.core.data.network.TestTdaNetworkDataSource
-import com.joblogic.todoapp.core.network.fake.FakeTdaNetworkDataSource
 import kotlinx.coroutines.test.runTest
 import org.junit.Before
 import org.junit.Test

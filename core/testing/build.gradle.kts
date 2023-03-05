@@ -4,10 +4,16 @@ plugins {
 }
 
 android {
-    namespace = "com.example.todoapp.core.testing"
+    namespace = "com.joblogic.todoapp.core.testing"
 }
 
 dependencies {
+    implementation(project(":core:model"))
+    implementation(project(":core:data"))
+
+    // Coroutines
+    implementation(libs.org.jetbrains.kotlinx.kotlinx.coroutines.test)
+
     // Test runner
     implementation(libs.androidx.test.runner)
 
